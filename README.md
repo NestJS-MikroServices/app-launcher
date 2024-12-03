@@ -4,9 +4,13 @@
 2. Crear un .env con los parametros de .env.template
 3. Ejecutar comando:
 ```
+git submodule update --init --recursive
+```
+4. Ejecutar comando:
+```
 docker compose up --build
 ```
-4. Frente a fallas de latencia:
+5. Frente a fallas de latencia:
 ```
 docker compose down
 ```
@@ -38,7 +42,6 @@ git submodule update --remote
 
 
 ## Importante
-Si se trabaja en el repositorio que tiene los sub-módulos, **primero actualizar y hacer push** en el sub-módulo y **después** en el repositorio principal. 
+Si se trabaja en el repositorio que tiene los sub-módulos, **primero actualizar y hacer push** en el sub-módulo y **después** en el repositorio principal.
 
 Si se hace al revés, se perderán las referencias de los sub-módulos en el repositorio principal y tendremos que resolver conflictos.
-
